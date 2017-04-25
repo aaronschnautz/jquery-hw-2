@@ -31,18 +31,12 @@
     <p>In in ornare ex. Morbi lobortis sit amet diam sed placerat. Curabitur et lorem massa.</p>
   </div>
 
-  <!-- add jQuery link HERE - above your code -->
-  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script>
-   /** 
-    * Rememver that events are used like this:
-    * 1. Write a function to run every time the event happens:
-    *    function myEventsFunction() {
-    *       // do stuff
-    *    }
-    * 2. "Bind" the event to an HTML element and a specific event:
-    *    $('CSS SELECTOR FOR ELEMENT').on('NAME OF EVENT TO LISTEN TO', myEventsFunction);
-    */
+    function readMore() {
+      $('div.read-more').removeClass('hidden');
+      $('p.read-more-button').hide();
+    }
   </script>
 </body>
 </html>
